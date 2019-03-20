@@ -2,6 +2,8 @@
 
 Gulp boilerplate supporting ES6.
 
+## Features
+
 Current features:
 
 Future features:
@@ -17,7 +19,7 @@ Future features:
 - Browsersync
 - TWIG.JS
 
-# Install
+## Install
 
 Clone the project and install using yarn or npm
 
@@ -28,4 +30,4 @@ yarn
 npm install
 ```
 
-# Folder structure
+## Folder structure
