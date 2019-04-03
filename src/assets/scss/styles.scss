@@ -1,1 +1,12 @@
-body { background: black; }
+@import 'atoms/button';
+
+body {
+    background: black;
+
+    a {
+        // Settings the colors to red
+        color: red;
+        display: flex;
+        will-change: color;
+    }
+}
