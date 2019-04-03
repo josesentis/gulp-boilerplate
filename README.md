@@ -9,6 +9,7 @@ Current features:
 Future features:
 - SCSS compilation
 - SCSS minification
+- SCSS Autoprefixer
 - Font copy to dest folder
 - Javascript ES6 transpilation
 - Javascript modules concatenation
@@ -17,6 +18,7 @@ Future features:
 - Image minification
 - Watch changes
 - Browsersync
+- CSS and JS Linterns
 - TWIG.JS
 
 ## Install
