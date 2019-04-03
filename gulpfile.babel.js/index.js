@@ -5,14 +5,7 @@ import rename from 'gulp-rename';
 import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 
-const routes = {
-  src: {
-    styles: 'src/assets/scss'
-  },
-  dest: {
-    styles: 'dist/assets/css'
-  }
-};
+import { routes } from 'config/routes';
 
 const SASS_FILES = `${routes.src.styles}/**/*.scss`;
 const AUTOPREFIXER_ARGS = {
