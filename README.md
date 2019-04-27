@@ -7,9 +7,9 @@ Gulp boilerplate supporting ES6.
 Current features:
 
 Future features:
-- SCSS compilation
-- SCSS minification
-- SCSS Autoprefixer
+:white_check_mark: SCSS compilation
+:white_check_mark: SCSS minification
+:white_check_mark: SCSS Autoprefixer
 - Font copy to dest folder
 - Javascript ES6 transpilation
 - Javascript modules concatenation
