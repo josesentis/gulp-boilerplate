@@ -30,4 +30,5 @@ const styles = () => gulp
   .pipe(sourcemaps.write())
   .pipe(gulp.dest(routes.dest.styles));
 
+export { SASS_FILES };
 export default styles;
