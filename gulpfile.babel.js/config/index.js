@@ -1,9 +1,14 @@
+const SRC_ASSETS = 'src/assets';
+const DEST_ASSETS = 'dist/assets';
+
 const routes = {
   src: {
-    styles: 'src/assets/scss'
+    fonts: `${SRC_ASSETS}/fonts`,
+    styles: `${SRC_ASSETS}/scss`
   },
   dest: {
-    styles: 'dist/assets/css'
+    fonts: `${DEST_ASSETS}/fonts`,
+    styles: `${DEST_ASSETS}/css`
   }
 };
 
