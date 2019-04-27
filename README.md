@@ -16,7 +16,7 @@ Future features:
 - SVG Sprite generation
 - CRP styles creation
 - Image minification
-- Watch changes
+- :white_check_mark: Watch changes
 - Browsersync
 - CSS and JS Linterns
 - TWIG.JS
