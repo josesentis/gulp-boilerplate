@@ -2958,6 +2958,21 @@ gulp-sourcemaps@^2.6.5:
     strip-bom-string "1.X"
     through2 "2.X"
 
+gulp-svgmin@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gulp-svgmin/-/gulp-svgmin-2.2.0.tgz#eabc2b97aa4aef90c21cef65ae5499b075007323"
+  integrity sha512-MjfZ7DNlomplrhACwmdowPnAV3firF+3432chp1XQyy6OxbZmM7AyMwsITfglS6bGaE3msKiNeqIb0Sn3LHlyg==
+  dependencies:
+    plugin-error "^1.0.1"
+    svgo "^1.2.1"
+
+gulp-svgo@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gulp-svgo/-/gulp-svgo-2.1.1.tgz#93ee24fd36ecc241761808748f9c63261bf5e7a5"
+  integrity sha512-QSJq3rh8ic8v/U1rH0zAFiipU0dpGvnr0ZDgyZyqgxTXbxCY3M2EoHMVeL2GTOH8JR72X/vgBD2eaztD2oldHw==
+  dependencies:
+    svgo "^1.0.0"
+
 gulp-uglify@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/gulp-uglify/-/gulp-uglify-3.0.2.tgz#5f5b2e8337f879ca9dec971feb1b82a5a87850b0"
@@ -5675,7 +5690,7 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
-svgo@^1.0.5:
+svgo@^1.0.0, svgo@^1.0.5, svgo@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.2.2.tgz#0253d34eccf2aed4ad4f283e11ee75198f9d7316"
   integrity sha512-rAfulcwp2D9jjdGu+0CuqlrAUin6bBWrpoqXWwKDZZZJfXcUXQSxLJOFJCQCSA0x0pP2U0TxSlJu2ROq5Bq6qA==

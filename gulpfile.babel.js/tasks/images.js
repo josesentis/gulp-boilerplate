@@ -3,11 +3,11 @@ import imagemin from 'gulp-imagemin';
 
 import { routes } from '../config';
 
-const IMAGES_FILES = `${routes.src.images}/**`;
+const IMAGES_FILES = `${routes.src.images}/*`;
 
 const images = () =>
   gulp
-    .src(IMAGES_FILES)
+    .src([IMAGES_FILES, `!${IMAGES_FILES}.svg`])
     .pipe(imagemin())
     .pipe(gulp.dest(routes.dest.images));
 

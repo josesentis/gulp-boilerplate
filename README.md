@@ -10,8 +10,8 @@ This Gulp boilerplate provides a starter kit to compile SCSS and JS files and cr
 - :white_check_mark: Javascript ES6 transpilation
 - Javascript modules concatenation
 - Javascript Polyfills
-- :white_check_mark: Image minification
-- SVG minification
+- :white_check_mark: Image optimization
+- :white_check_mark: SVG minification
 - :white_check_mark: Changes watcher
 - Browsersync
 - CSS and JS Linterns
