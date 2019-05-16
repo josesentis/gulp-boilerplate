@@ -11,24 +11,25 @@ const SASS_FILES = `${routes.src.styles}/**/*.scss`;
 
 const AUTOPREFIXER_ARGS = {
   browsers: ['last 2 versions'],
-  cascade: false
+  cascade: false,
 };
 
-const styles = () => gulp
-  .src(SASS_FILES)
-  .pipe(sourcemaps.init())
-  .pipe(sass().on('error', sass.logError))
-  .pipe(autoprefixer(AUTOPREFIXER_ARGS))
-  .pipe(
-    cssnano({
-      discardComments: { removeAll: true },
-      reduceIndents: false,
-      zIndex: false
-    })
-  )
-  .pipe(rename({ suffix: '.min' }))
-  .pipe(sourcemaps.write())
-  .pipe(gulp.dest(routes.dest.styles));
+const styles = () =>
+  gulp
+    .src(SASS_FILES)
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer(AUTOPREFIXER_ARGS))
+    .pipe(
+      cssnano({
+        discardComments: { removeAll: true },
+        reduceIndents: false,
+        zIndex: false,
+      })
+    )
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(routes.dest.styles));
 
 export { SASS_FILES };
 export default styles;
