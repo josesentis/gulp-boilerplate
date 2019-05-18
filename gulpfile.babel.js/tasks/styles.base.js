@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import cssnano from 'gulp-cssnano';
 import autoprefixer from 'gulp-autoprefixer';
+import plumber from 'gulp-plumber';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
@@ -17,8 +18,9 @@ const AUTOPREFIXER_ARGS = {
 const styles = () =>
   gulp
     .src(SASS_FILES)
+    .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass())
     .pipe(autoprefixer(AUTOPREFIXER_ARGS))
     .pipe(
       cssnano({
@@ -29,6 +31,7 @@ const styles = () =>
     )
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
+    .pipe(plumber.stop())
     .pipe(gulp.dest(routes.dest.styles));
 
 export { SASS_FILES };

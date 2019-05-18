@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import babel from 'gulp-babel';
 import rename from 'gulp-rename';
+import plumber from 'gulp-plumber';
 import uglify from 'gulp-uglify';
 import sourcemaps from 'gulp-sourcemaps';
 
@@ -12,6 +13,7 @@ const SCRIPTS_SRC = `${routes.src.scripts}/*.js`;
 const scripts = () =>
   gulp
     .src(SCRIPTS_SRC)
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(
       babel({
@@ -21,6 +23,7 @@ const scripts = () =>
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
+    .pipe(plumber.stop())
     .pipe(gulp.dest(routes.dest.scripts));
 
 export { SCRIPTS_FILES };
