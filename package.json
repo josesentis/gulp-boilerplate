@@ -18,6 +18,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svgmin": "^2.2.0",
     "gulp-svgo": "^2.1.1",

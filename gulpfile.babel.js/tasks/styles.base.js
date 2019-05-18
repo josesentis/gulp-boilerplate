@@ -4,6 +4,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import plumber from 'gulp-plumber';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
+import size from 'gulp-size';
 import sourcemaps from 'gulp-sourcemaps';
 
 import { routes } from '../config';
@@ -32,6 +33,7 @@ const styles = () =>
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
     .pipe(plumber.stop())
+    .pipe(size())
     .pipe(gulp.dest(routes.dest.styles));
 
 export { SASS_FILES };
