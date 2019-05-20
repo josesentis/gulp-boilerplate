@@ -17,6 +17,7 @@ This Gulp boilerplate provides a starter kit to compile SCSS and JS files and cr
 - TWIG.JS
 - CRP styles creation
 - Browsersync
+- Typescript support
 
 ## Getting Started
 
