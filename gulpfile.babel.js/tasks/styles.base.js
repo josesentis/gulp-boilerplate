@@ -1,6 +1,7 @@
 import gulp from 'gulp';
-import cssnano from 'gulp-cssnano';
 import autoprefixer from 'gulp-autoprefixer';
+import cssnano from 'gulp-cssnano';
+import gulpIf from 'gulp-if';
 import plumber from 'gulp-plumber';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
@@ -18,7 +19,7 @@ const AUTOPREFIXER_ARGS = {
 
 const styles = () =>
   gulp
-    .src(SASS_FILES)
+    .src([`${routes.src.styles}/*.scss`, `${routes.src.styles}/crp/*.scss`])
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -34,7 +35,12 @@ const styles = () =>
     .pipe(sourcemaps.write())
     .pipe(plumber.stop())
     .pipe(size())
-    .pipe(gulp.dest(routes.dest.styles));
+    .pipe(gulpIf(function (file) {
+      return file.path.includes('crp');
+    },
+      gulp.dest(`${routes.dest.styles}/crp`),
+      gulp.dest(routes.dest.styles)
+    ));
 
 export { SASS_FILES };
 export default styles;
