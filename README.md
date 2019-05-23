@@ -33,4 +33,6 @@ yarn start / npm run start
 ## Folder Structure
 
 - `src/assets` - Javascript, SCSS and fonts and image files
-- `dist/assets` - Compiled and minified asset files.
+- `dist/css` - Compiled and minified asset files.
+- `dist/js`
+- `dist/img`
