@@ -1,5 +1,5 @@
 const init = () => {
-    console.log("Example");
+  console.log('Example');
 };
 
 export default init();
