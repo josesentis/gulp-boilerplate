@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import autoprefixer from 'gulp-autoprefixer';
 import cssnano from 'gulp-cssnano';
+import gcmq from 'gulp-group-css-media-queries';
 import gulpIf from 'gulp-if';
 import plumber from 'gulp-plumber';
 import rename from 'gulp-rename';
@@ -24,6 +25,7 @@ const styles = () =>
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer(AUTOPREFIXER_ARGS))
+    .pipe(gcmq())
     .pipe(
       cssnano({
         discardComments: { removeAll: true },
