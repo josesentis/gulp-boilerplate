@@ -40,7 +40,7 @@ const styles = () =>
     .pipe(gulpIf(function (file) {
       return file.path.includes('crp');
     },
-      gulp.dest(`${routes.dest.styles}/crp`),
+      gulp.dest(routes.src.views),
       gulp.dest(routes.dest.styles)
     ));
 
