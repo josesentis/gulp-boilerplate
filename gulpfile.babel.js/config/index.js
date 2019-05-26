@@ -1,7 +1,8 @@
-const SRC_ASSETS = 'src/assets';
+const SRC = 'src';
+const SRC_ASSETS = `${SRC}/assets`;
+const SRC_VIEWS = `${SRC}/views`;
 
 const DEST = 'dist';
-const DEST_ASSETS = `${DEST}/assets`;
 
 const routes = {
   src: {
@@ -9,13 +10,13 @@ const routes = {
     images: `${SRC_ASSETS}/img`,
     styles: `${SRC_ASSETS}/scss`,
     scripts: `${SRC_ASSETS}/js`,
-    views: `${SRC_ASSETS}/views`,
+    views: SRC_VIEWS,
   },
   dest: {
-    fonts: `${DEST_ASSETS}/fonts`,
-    images: `${DEST_ASSETS}/img`,
-    styles: `${DEST_ASSETS}/css`,
-    scripts: `${DEST_ASSETS}/js`,
+    fonts: `${DEST}/fonts`,
+    images: `${DEST}/img`,
+    styles: `${DEST}/css`,
+    scripts: `${DEST}/js`,
     views: DEST,
   },
 };

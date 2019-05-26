@@ -9,19 +9,19 @@
         <link rel="stylesheet" href="">
         <style type="text/css">
             {% block crp %}
-                {% include 'crp/default.min.css' %}
+                {% include '../crp/default.min.css' %}
             {% endblock %}
         </style>
     </head>
     <body>
         {% block header %}
-            {% include 'organisms/header.html.twig' %}
+            {% include '../organisms/header.twig' %}
         {% endblock %}
         <main id="main">
             {% block body %}{% endblock %}
         </main>
         {% block footer %}
-            {% include 'organisms/footer.html.twig' %}
+            {% include '../organisms/footer.twig' %}
         {% endblock %}
     </body>
 </html>
