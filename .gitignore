@@ -1,6 +1,5 @@
 # OS GENERATED FILES
 .DS_Store
-.DS_Store
 
 # NODE
 node_modules
@@ -43,4 +42,4 @@ typings/
 .next
 
 # dist folder
-dist
+dist/
