@@ -2,22 +2,20 @@
 
 This Gulp boilerplate provides a starter kit to compile SCSS and JS files and create your sites using TWIG.JS as a templating system. It supporting ES6 features.
 
-
 ## :sparkles: Features
 
-- :white_check_mark: SCSS compilation
-- :white_check_mark: SCSS minification
-- :white_check_mark: SCSS Autoprefixer
-- :white_check_mark: Font copy to dest folder
-- :white_check_mark: Javascript ES6 transpilation
-- :white_check_mark: Image optimization
-- :white_check_mark: SVG minification
-- :white_check_mark: Changes watcher
-- :white_check_mark: CSS and JS Linterns
-- :white_check_mark: Templating with TWIG.JS
-- :white_check_mark: CRP styles creation
-- :white_check_mark: Browsersync
-
+- SCSS compilation
+- SCSS minification
+- SCSS Autoprefixer
+- Font copy to dest folder
+- Javascript ES6 transpilation
+- Image optimization
+- SVG minification
+- Changes watcher
+- CSS and JS Linterns
+- Templating with TWIG.JS
+- CRP styles creation
+- Browsersync
 
 ## :computer: Getting Started
 
@@ -29,7 +27,6 @@ $ cd your-repo-name
 $ yarn / npm install
 $ yarn start / npm run start
 ```
-
 
 ## :file_folder: Folder Structure
 
