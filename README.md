@@ -15,7 +15,7 @@ This Gulp boilerplate provides a starter kit to compile SCSS and JS files and cr
 - :white_check_mark: CSS and JS Linterns
 - :white_check_mark: Templating with TWIG.JS
 - :white_check_mark: CRP styles creation
-- Browsersync
+- :white_check_mark: Browsersync
 
 ## :computer: Getting Started
 
