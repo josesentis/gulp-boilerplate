@@ -1,12 +1,5 @@
-@import 'atoms/button';
+@import 'molecules/example';
 
 body {
     background: #f5f5f5;
-
-    a {
-        // Settings the colors to red
-        color: red;
-        display: flex;
-        will-change: color;
-    }
 }
