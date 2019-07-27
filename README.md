@@ -22,7 +22,7 @@ This Gulp boilerplate provides a starter kit to compile SCSS and JS files and cr
 Clone the project and install using yarn or npm
 
 ```
-$ git clone https://github.com/josesentis15/gulp-boilerplate.git
+$ git clone https://github.com/josesentis15/gulp-boilerplate.git your-repo-name
 $ cd your-repo-name
 $ yarn / npm install
 $ yarn start / npm run start
