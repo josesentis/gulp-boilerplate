@@ -1,5 +1,6 @@
 import gulp, { watch } from 'gulp';
 
+import { reload, serve } from './tasks/browser-sync';
 import fonts, { FONT_FILES } from './tasks/fonts';
 import images, { IMAGES_FILES } from './tasks/images.base';
 import svg from './tasks/images.svg';
@@ -16,12 +17,11 @@ const buildMarkup = gulp.series(markup);
 const build = gulp.parallel(fonts, imageBuild, buildStyles, buildScripts, buildMarkup);
 
 const watcher = () => {
-  watch(FONT_FILES, fonts);
-  watch(IMAGES_FILES, imageBuild);
-  watch(SASS_FILES, buildStyles);
-  watch(SCRIPTS_FILES, buildScripts);
-  watch(SASS_FILES, buildScripts);
-  watch(MARKUP_FILES, buildMarkup);
+  watch(FONT_FILES, gulp.series(fonts, reload));
+  watch(IMAGES_FILES, gulp.series(imageBuild, reload));
+  watch(MARKUP_FILES, gulp.series(buildMarkup, reload));
+  watch(SASS_FILES, gulp.series(buildStyles, reload));
+  watch(SCRIPTS_FILES, gulp.series(buildScripts, reload));
 };
 
-export default gulp.series(build, watcher);
+export default gulp.series(build, serve, watcher);
