@@ -6,10 +6,10 @@ import twig from 'gulp-twig';
 
 import { routes } from '../config';
 
-const MARKUP_FILES = `${routes.src.views}/**/*.twig`;
+const MARKUP_FILES = `${routes.src.views}/**/*`;
 
 const markup = () => gulp
-    .src([`${routes.src.views}/pages/*.twig`])
+    .src([`${routes.src.views}/*.twig`])
     .pipe(plumber())
     .pipe(twig({
       cache: false

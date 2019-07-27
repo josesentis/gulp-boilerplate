@@ -1,5 +1,7 @@
 import browserSync from 'browser-sync';
 
+import { routes } from '../config';
+
 const reload = done => {
   browserSync.reload();
   done();
@@ -7,13 +9,12 @@ const reload = done => {
 
 const serve = done => {
   browserSync.init({
-    https: true,
-    proxy: 'https://localhost',
+    server: { baseDir: `${routes.dest.views}/` },
     port: 5000,
     ui: { port: 5001 },
     options: { reloadDelay: 250 },
-    open: true,
-    notify: false
+    notify: true,
+    open: true
   });
   done();
 };

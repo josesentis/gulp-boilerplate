@@ -17,12 +17,11 @@ const buildMarkup = gulp.series(markup);
 const build = gulp.parallel(fonts, imageBuild, buildStyles, buildScripts, buildMarkup);
 
 const watcher = () => {
-  watch(FONT_FILES, fonts, reload);
-  watch(IMAGES_FILES, imageBuild, reload);
-  watch(SASS_FILES, buildStyles, reload);
-  watch(SCRIPTS_FILES, buildScripts, reload);
-  watch(SASS_FILES, buildScripts, reload);
-  watch(MARKUP_FILES, buildMarkup, reload);
+  watch(FONT_FILES, gulp.series(fonts, reload));
+  watch(IMAGES_FILES, gulp.series(imageBuild, reload));
+  watch(MARKUP_FILES, gulp.series(buildMarkup, reload));
+  watch(SASS_FILES, gulp.series(buildStyles, reload));
+  watch(SCRIPTS_FILES, gulp.series(buildScripts, reload));
 };
 
 export default gulp.series(build, serve, watcher);
