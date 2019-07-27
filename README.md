@@ -22,7 +22,7 @@ This Gulp boilerplate provides a starter kit to compile SCSS and JS files and cr
 Clone the project and install using yarn or npm
 
 ```
-$ git clone https://github.com/josesentis15/gulp-boilerplate.git your-repo-name
+$ git clone https://github.com/josesentis15/gulp-boilerplate.git
 $ cd your-repo-name
 $ yarn / npm install
 $ yarn start / npm run start
@@ -31,7 +31,7 @@ $ yarn start / npm run start
 ## :file_folder: Folder Structure
 
 - `src/assets` - Javascript, SCSS, fonts and image files
-- `src/views` - Twig Files. Gulp compiles twigs found on the root folder.
+- `src/views` - Twig Files. Gulp compiles twigs found in the root folder.
 - `dist/css` - Compiled and minified asset files.
 - `dist/js`
 - `dist/img`
