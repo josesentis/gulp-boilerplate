@@ -30,8 +30,8 @@ $ yarn start / npm run start
 
 ## :file_folder: Folder Structure
 
-- `src/assets` - Javascript, SCSS and fonts and image files
-- `src/views` - Twig Files. Gulp compiles twigs found on `pages` folder.
+- `src/assets` - Javascript, SCSS, fonts and image files
+- `src/views` - Twig Files. Gulp compiles twigs found in the root folder.
 - `dist/css` - Compiled and minified asset files.
 - `dist/js`
 - `dist/img`
