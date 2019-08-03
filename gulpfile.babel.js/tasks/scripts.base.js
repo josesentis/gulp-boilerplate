@@ -12,7 +12,7 @@ import buffer from 'vinyl-buffer';
 import { routes } from '../config';
 
 const SCRIPTS_FILES = `${routes.src.scripts}/**/*.js`;
-const FILE_NAME
+const FILE_NAME = 'app.js';
 
 const scripts = () => {
   return browserify({ entries: `${routes.src.scripts}/${FILE_NAME}` })
