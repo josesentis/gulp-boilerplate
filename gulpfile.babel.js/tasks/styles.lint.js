@@ -9,7 +9,10 @@ const lint = () => {
     .pipe(stylelint({
       syntax: 'scss',
       failAfterError: false,
-      reporters: [{formatter: 'string', console: true}]
+      reporters: [{
+        formatter: 'string',
+        console: true
+      }]
     }));
 };
 

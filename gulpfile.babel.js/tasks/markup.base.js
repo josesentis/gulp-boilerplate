@@ -9,10 +9,12 @@ import { routes } from '../config';
 const MARKUP_FILES = `${routes.src.views}/**/*`;
 
 const markup = () => gulp
-    .src([`${routes.src.views}/*.twig`])
+    .src(`${routes.src.views}/pages/**/*.twig`)
     .pipe(plumber())
     .pipe(twig({
-      cache: false
+      base: routes.src.views,
+      cache: false,
+      data
     }))
     .pipe(htmlmin({
       collapseWhitespace: true,
