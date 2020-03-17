@@ -10,7 +10,7 @@ const MARKUP_FILES = `${routes.src.views}/**/*`;
 import data from '../../src/data';
 
 const markup = () => gulp
-    .src(`${routes.src.views}/pages/**/*.twig`)
+    .src(`${routes.src.views}/*.twig`)
     .pipe(plumber())
     .pipe(twig({
       base: routes.src.views,
