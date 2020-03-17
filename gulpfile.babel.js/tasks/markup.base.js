@@ -7,6 +7,7 @@ import twig from 'gulp-twig';
 import { routes } from '../config';
 
 const MARKUP_FILES = `${routes.src.views}/**/*`;
+import data from '../../src/data';
 
 const markup = () => gulp
     .src(`${routes.src.views}/pages/**/*.twig`)
