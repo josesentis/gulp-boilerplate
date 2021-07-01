@@ -1,0 +1,5 @@
+{% set id = component.id|default('') %}
+
+<span id="{{ id }}" class="icon {{ component.class }}" {% if component.attr %}{{ component.attr }}{% endif %}>
+    {% include '../svg/' ~ component.name ~ '.svg' %}
+</span>

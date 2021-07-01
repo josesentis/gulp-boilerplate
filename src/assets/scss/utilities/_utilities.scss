@@ -1,0 +1,35 @@
+.u-noscroll { overflow: hidden; }
+.u-align-center { text-align: center; }
+.u-uppercase { text-transform: uppercase; }
+.u-sr-only { @include visually-hidden; }
+.u-reading { max-width: get-maxrems($max-reading-width); }
+
+.u-icon {
+    display: inline-block;
+
+    svg {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.u-fullscreen {
+    align-items: center;
+    background-color: rgb(245, 247, 250);
+    color: black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: opacity;
+
+    &:not(.visible) { pointer-events: none; }
+}
+
+@for $i from 1 through 6 {
+    .u-z-#{$i} { z-index: #{10 * $i}; }
+}

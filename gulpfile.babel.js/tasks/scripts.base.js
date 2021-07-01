@@ -3,7 +3,6 @@ import gulp from 'gulp';
 import rename from 'gulp-rename';
 import plumber from 'gulp-plumber';
 import size from 'gulp-size';
-import uglify from 'gulp-uglify';
 import sourcemaps from 'gulp-sourcemaps';
 
 import { routes } from '../config';
@@ -20,7 +19,6 @@ const scripts = () =>
     }))
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
     .pipe(plumber.stop())

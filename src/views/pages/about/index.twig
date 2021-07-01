@@ -1,0 +1,21 @@
+{% extends '../../templates/base.twig' %}
+
+{% set data = data[language] %}
+
+{% block crp %}
+    {% include '../../crp/about.min.css' %}
+{% endblock %}
+
+{% block body %}
+    <div class="about-page">
+        <h1>{{ data.about.title }}</h1>
+        {% include '../../components/example.twig' %}
+    </div>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="css/about.min.css" />
+{% endblock %}
+{% block scripts %}
+    <script src="js/about.min.js" async defer></script>
+{% endblock %}

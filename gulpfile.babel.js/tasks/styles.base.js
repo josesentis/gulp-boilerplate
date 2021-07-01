@@ -5,17 +5,17 @@ import gcmq from 'gulp-group-css-media-queries';
 import gulpIf from 'gulp-if';
 import plumber from 'gulp-plumber';
 import rename from 'gulp-rename';
-import sass from 'gulp-sass';
+import gulpSass from 'gulp-sass';
 import size from 'gulp-size';
 import sourcemaps from 'gulp-sourcemaps';
+import nodeSass from 'node-sass';
 
 import { routes } from '../config';
 
+const sass = gulpSass(nodeSass);
 const SASS_FILES = `${routes.src.styles}/**/*.scss`;
-
 const AUTOPREFIXER_ARGS = {
-  browsers: ['last 2 versions'],
-  cascade: false,
+  cascade: false
 };
 
 const styles = () =>

@@ -1,9 +1,16 @@
 {
+  "parser": "@babel/eslint-parser",
   "extends": "@runroom/eslint-config-runroom",
   "env": {
     "browser": true
   },
   "rules": {
-    "implicit-arrow-linebreak": "off"
+    "operator-linebreak": "off",
+    "object-curly-newline": [
+      "error",
+      {
+        "multiline": true
+      }
+    ]
   }
 }

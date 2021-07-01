@@ -1,0 +1,30 @@
+{% extends '../templates/base.twig' %}
+
+{% set data = data[language] %}
+
+{% block crp %}
+    {% include '../crp/home.min.css' %}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ data.home.title }}</h1>
+    <br>
+    <br>
+    <br>
+    {% include '../components/button.twig' with {
+        component: {
+            text: 'click here!'
+        }
+    } %}
+    <br>
+    <br>
+    <br>
+    <a href="/about">About page</a>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="css/home.min.css" />
+{% endblock %}
+{% block scripts %}
+    <script src="js/home.min.js" async defer></script>
+{% endblock %}
