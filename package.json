@@ -43,7 +43,7 @@
     "gulp-svgmin": "^4.0.1",
     "gulp-svgo": "^2.2.1",
     "gulp-twig": "^1.2.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.1.1",
     "node-sass": "^6.0.1",
     "npm-updates": "^0.2.1",
     "underscore": "^1.13.1",
