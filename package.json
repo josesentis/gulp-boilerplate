@@ -44,7 +44,7 @@
     "gulp-svgo": "^2.2.1",
     "gulp-twig": "^1.2.0",
     "node-fetch": "^2.6.1",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "npm-updates": "^0.2.1",
     "underscore": "^1.13.1",
     "vinyl-buffer": "^1.0.1",
