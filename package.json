@@ -20,7 +20,7 @@
     "babelify": "^10.0.0",
     "browser-sync": "^2.27.4",
     "browserify": "^17.0.0",
-    "electron": "^13.1.4",
+    "electron": "^18.3.7",
     "electron-builder": "^22.11.7",
     "eslint-friendly-formatter": "4.0.1",
     "esm": "^3.2.25",
